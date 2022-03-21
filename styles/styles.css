@@ -454,7 +454,7 @@ section h5 {
   grid-column: 1/-1;
   background: url(../assets/home-image-1.jpg) center;
   background-size: cover;
-  height: 100vh;
+  height: 75vh;
 }
 .homeHeader .navBar {
   display: -webkit-box;
