@@ -101,7 +101,7 @@ label {
     display: none;
 }
 
-input[type="submit"] {
+form input[type="submit"] {
     font-family: $headingFont, serif;
     font-style: italic;
     font-weight: 900;
@@ -109,6 +109,15 @@ input[type="submit"] {
     text-align: center;
     letter-spacing: 0.1rem;
     line-height: 3.2rem;
+    border: 2px solid $tertiary;
+    background-color: $tertiary;
+    color: $solidWhite;
+    &:hover,
+    &:focus {
+        color: $tertiary;
+        background-color: $solidWhite;
+        border: 2px solid $tertiary;
+    }
 }
 
 ::placeholder {
@@ -128,6 +137,13 @@ button {
     line-height: 3.2rem;
     background-color: $tertiary;
     color: $solidWhite;
+    border: 2px solid $tertiary;
+    &:hover,
+    &:focus {
+        color: $tertiary;
+        background-color: $solidWhite;
+        border: 2px solid $tertiary;
+    }
 }
 
 section h5 {

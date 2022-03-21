@@ -2,7 +2,7 @@
     grid-column: 1 / -1;
     padding: 10%;
     background-color: $bgrdcolour1;
-    z-index: -1;
+    // z-index: -1;
     display: grid;
     grid-template-columns: 3fr 1fr;
     article {
@@ -44,14 +44,20 @@
     .infoBeach, .infoCommunity, .infoBlog, .infoContact {
         display: grid;
         grid-template-columns: 1fr 6fr;
-        i {
-            height: 5.8rem;
-            font-size: 3.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $primary;
-        }
+        .iconWrapper {
+            i {
+                height: 5.8rem;
+                width: 5.8rem;
+                font-size: 3.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $solidWhite;
+                background-color: $primary;
+                border: 1px solid $primary;
+                border-radius: 50%;
+            }
+        }   
     }
     .infoText {
         display: flex;
