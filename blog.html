@@ -4,10 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Beachstays | Blog</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/2aabf3892f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="siteGridBlog">
+        <header id="header" class="gridItem blogHeader">
+            <div class="navBar">
+                <a href="./index.html">
+                    <h1 class="siteLogo">Beachstays</h1>
+                </a>
+                <nav>
+                    <ul>    
+                        <li><a href="./index.html#header">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <i class="fa-solid fa-square-caret-down"></i>
+        </header>
+
+        <div class="gridItem blog">
+            <h2>Blog</h2>
+        </div>
+
+        <section class="gridItem post">
+            <div class="imgContainer">
+                <img src="./assets/post-image.jpg" alt="">
+            </div>
+            <article>
+                <h5>Five days of ocean seas</h5>
+                <p class="date">Monday January 21th, 2019 by <em>Bora</em></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In eveniet quae ex hic modi? Voluptatem perferendis, delectus ut explicabo natus animi, autem nisi repudiandae tempora consequuntur asperiores eum quaerat impedit ullam, fuga incidunt reiciendis illo?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla unde velit adipisci, porro dolores, dolor quos eum eos maiores quod saepe placeat mollitia, explicabo rem eligendi tenetur. Quam vitae nemo repudiandae deserunt provident nobis quidem totam, architecto ullam ea, aliquid reprehenderit quia, officiis quas ab.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, voluptas aspernatur amet illo nihil ipsum repudiandae alias eum eligendi. Fuga harum id consectetur reprehenderit dolorum veritatis dolor sunt accusamus voluptatem, commodi ad autem dignissimos temporibus placeat, incidunt minus? Distinctio, tempore odit debitis perferendis molestiae, ipsam veniam, quae asperiores ut laudantium sapiente. Corrupti quisquam asperiores explicabo? Iste voluptate aut aliquam, harum necessitatibus possimus labore consequuntur fuga repudiandae aspernatur maiores blanditiis repellat.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla tenetur officia ipsa eveniet repudiandae dolore perspiciatis quos voluptas, eum minus voluptatibus, natus, assumenda laudantium.</p>
+            </article>
+        </section>
+
+        <aside class="gridItem asideInfo">
+            <div class="wrapper">
+                <img src="./assets/sidebar-image.jpg" alt="">
+                <h4>Our mission</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequatur.</p>
+                <a href="#" target="_blank">Find out more</a>
+                <h4>Recent posts</h4>
+                <ul>
+                    <li><a href="#" target="_blank">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#" target="_blank">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#" target="_blank">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#" target="_blank">Lorem ipsum dolor sit.</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="gridItem comments">
+            <h4>Comments:</h4>
+            <div class="commentImg1">
+                <img src="./assets/comment-image.jpg" alt="">
+            </div>
+            <div class="comment1">
+                <h5>Tuesday October 9th, 2019 by Reyansh</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sit voluptatum iste possimus? Nemo maiores praesentium fugiat consectetur fugit, delectus, debitis aliquam atque non excepturi ullam vero! Ab, nulla! Minima voluptas laboriosam at magnam quam fugit natus saepe laudantium quod!</p>
+            </div>
+            <div class="commentImg2">
+                <img src="./assets/comment-image2.jpg" alt="">
+            </div>
+            <div class="comment2">
+                <h5>Wednesday October 10th, 2019 by Olivia</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem eos explicabo unde. Adipisci deleniti distinctio in fuga saepe. Laudantium deleniti fugit, facilis dolores, aspernatur fugiat iste sit possimus adipisci porro dignissimos aliquam quam, ea aliquid nobis culpa nihil cum?</p>
+            </div>
+        </section>
+
+        <section class="gridItem commentForm">
+            <form action="#">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Name">
+    
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email address">
+
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Comment" required maxlength="255"></textarea>
+    
+                <input type="submit" value="Post comment">
+            </form>
+        </section>
+
+        <footer>
+            <p>Copyright © 2019 HackerYou</p>
+        </footer>
+
+    </div>
     
 </body>
 </html>

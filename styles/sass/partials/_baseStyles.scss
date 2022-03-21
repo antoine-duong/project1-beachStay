@@ -1,0 +1,57 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, textarea, form, label, legend, table, caption, menu, nav, section, summary, time, mark, audio, video, iframe, main, header, footer {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a, a::after {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html {
+    background-color: $bgrdcolour2;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+input[type="submit"] {
+    outline: none;
+    border: none;
+}
+
+.siteGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+.siteGridBlog {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    max-width: 2560px;
+    margin: 0 auto;
+    grid-template-rows: 30vh 10vh 20vh;
+}
+
+.siteGridContact {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    max-width: 2560px;
+    margin: 0 auto;
+    grid-template-rows: 30vh 10vh 20vh 40vh;
+}
+
+

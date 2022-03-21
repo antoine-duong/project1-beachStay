@@ -1,0 +1,115 @@
+.siteGridBlog {
+    background-color: $bgrdcolour1;
+}
+
+.blog {
+    grid-area: 2 / 1 / 3 / -1;
+    margin-left: 10%;
+}
+
+.post {
+    grid-area: 3 / 1 / 5 / 9;
+    .imgContainer {
+        width: 100%;
+        img {
+            width: calc(100% - 20px);
+            object-fit: cover;
+            box-shadow: 20px 20px 0px $primary;
+        }
+    }
+    article {
+        border-right: 5px solid $primary;
+        border-bottom: 5px solid $primary;
+        padding: 10% 10% 5% 15%;
+        .date {
+            margin: 0;
+            padding-bottom: 2.5%;
+        }
+        p {
+            margin-top: 2.5%;
+        }
+    }
+}
+
+.asideInfo {
+    grid-area: 4 / 9 / 5 / -1;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10%;
+    .wrapper {
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.comments {
+    grid-area: 5 / 1 / 6 / 9;
+    display: grid;
+    grid-template-columns: 15% 15% 70%;
+    h4 {
+        grid-column: 2 / -1;
+    }
+    .commentImg1 {
+        grid-area: 2 / 2 / 3 / 3;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .comment1 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    .commentImg2 {
+        grid-area: 3 / 2 / 4 / 3;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .comment2 {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+}
+.commentForm {
+    grid-area: 6 / 1 / 7 / 9;
+    form {
+        display: grid;
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-rows: 1fr 3fr 1fr;
+        row-gap: 10%;
+        background-color: $solidWhite;
+        height: 100%;
+        padding: 5% 0;
+        input[type="text"] {
+            grid-area: 1 / 2 / 2 / 3;
+            border: none;
+            border-bottom: 2px solid $primary;
+            padding-left: 10%;
+            margin-right: 3.5%;
+        }
+        input[type="email"] {
+            grid-area: 1/ 3 / 2 / 4;
+            border: none;
+            border-bottom: 2px solid $primary;
+            padding-left: 10%;
+            margin-left: 3.5%;
+        }
+        textarea {
+            grid-area: 2 / 2 / 4 / 4;
+            border: 2px solid $primary;
+            resize: none;
+            padding-left: 4%;
+            padding-top: 2%;
+        }
+        input[type="submit"] {
+            grid-area: 4 / 2 / 5 / 4;;
+            background-color: $tertiary;
+            color: $solidWhite;
+            cursor: pointer;
+        }
+    }
+}

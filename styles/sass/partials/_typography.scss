@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap');
+
+// font-family: 'Asap', sans-serif;
+// font-family: 'Cabin', sans-serif;
+// font-family: 'Merriweather', serif;
+
+html {
+    font-size: 62.5%; // set base font size to 10px on standard browser setting
+}
+
+body {
+    font-family: $bodyFont, sans-serif;
+    font-size: 2rem;
+    color: $quaternary;
+}
+
+h1 {
+    font-family: $headingFont, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 11.12rem;
+    color: $tertiary;
+}
+
+h2 {
+    font-family: $bodyFont, sans-serif;
+    font-weight: bold;
+    font-size: 8.7rem;
+    letter-spacing: 0.9rem;
+    line-height: 5.8px;
+    color: $solidWhite;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 6.2rem;
+    letter-spacing: 0.67rem;
+    line-height: 5.8rem;
+    color: $secondary;
+    text-transform: lowercase;
+    padding-left: 1%;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 0.38rem;
+    line-height: 5.8rem;
+    color: $secondary;
+}
+
+.infoLast h4 {
+    color: $tertiary;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.32rem;
+    line-height: 5.8rem;
+    color: $secondary;
+}
+
+p {
+    letter-spacing: 0.2rem;
+    line-height: 3.2rem;
+}
+
+nav {
+    a {
+        font-family: $bodyFont, sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $solidWhite;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+            outline: none;
+        }
+    }
+}
+
+ul li {
+    font-family: $bodyFont, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 3.2rem;
+}
+
+.siteLogo {
+    font-family: $headingFont, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3.46rem;
+    color: $primary;
+}
+
+label {
+    display: none;
+}
+
+input[type="submit"] {
+    font-family: $headingFont, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    line-height: 3.2rem;
+}
+
+::placeholder {
+    font-family: $bodyFont, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 3.2rem;
+}
