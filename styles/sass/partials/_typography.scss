@@ -117,3 +117,15 @@ input[type="submit"] {
     letter-spacing: 0.2rem;
     line-height: 3.2rem;
 }
+
+button {
+    font-family: $headingFont, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    line-height: 3.2rem;
+    background-color: $tertiary;
+    color: $solidWhite;
+}

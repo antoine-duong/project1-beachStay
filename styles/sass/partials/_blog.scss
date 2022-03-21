@@ -52,9 +52,11 @@
     grid-template-columns: 15% 15% 70%;
     h4 {
         grid-column: 2 / -1;
+        padding: 5% 0;
     }
     .commentImg1 {
         grid-area: 2 / 2 / 3 / 3;
+        padding-bottom: 10%;
         img {
             width: 100%;
             object-fit: cover;
@@ -62,6 +64,7 @@
     }
     .comment1 {
         grid-area: 2 / 3 / 3 / 4;
+        padding: 0 10% 5% 10%;
     }
     .commentImg2 {
         grid-area: 3 / 2 / 4 / 3;
@@ -72,13 +75,14 @@
     }
     .comment2 {
         grid-area: 3 / 3 / 4 / 4;
+        padding: 0 10% 5% 10%;
     }
 }
 .commentForm {
     grid-area: 6 / 1 / 7 / 9;
     form {
         display: grid;
-        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-columns: 15% 42.5% 42.5%;
         grid-template-rows: 1fr 3fr 1fr;
         row-gap: 10%;
         background-color: $solidWhite;
