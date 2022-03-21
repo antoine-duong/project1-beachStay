@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap");
 html {
   line-height: 1.15;
@@ -444,6 +445,11 @@ button {
   color: #FFF;
 }
 
+section h5 {
+  color: #063974;
+  font-size: 2rem;
+}
+
 .homeHeader {
   grid-column: 1/-1;
   background: url(../assets/home-image-1.jpg) center;
@@ -750,6 +756,7 @@ button {
 
 .siteGridBlog {
   background-color: #FAFFFE;
+  height: 100%;
 }
 
 .blog {
@@ -793,10 +800,35 @@ button {
   grid-column: 2/-1;
   grid-row: 2/3;
 }
+.asideInfo .wrapper h4 {
+  color: #063974;
+}
 .asideInfo .wrapper img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.asideInfo .wrapper a {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  line-height: 3.2rem;
+  color: #0C5F4C;
+}
+.asideInfo .wrapper ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.asideInfo .wrapper ul li::before {
+  content: "•";
+  color: #50E3C2;
+  padding: 0 2%;
+}
+.asideInfo .wrapper ul li a {
+  color: #2C2C2C;
+  font-weight: normal;
 }
 
 .comments {
@@ -807,6 +839,8 @@ button {
 .comments h4 {
   grid-column: 2/-1;
   padding: 5% 0;
+  font-weight: bold;
+  color: #2C2C2C;
 }
 .comments .commentImg1 {
   grid-area: 2/2/3/3;
@@ -816,6 +850,7 @@ button {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  padding-top: 10%;
 }
 .comments .comment1 {
   grid-area: 2/3/3/4;
@@ -828,6 +863,7 @@ button {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  padding-top: 10%;
 }
 .comments .comment2 {
   grid-area: 3/3/4/4;

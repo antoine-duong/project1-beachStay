@@ -1,5 +1,6 @@
 .siteGridBlog {
     background-color: $bgrdcolour1;
+    height: 100%;
 }
 
 .blog {
@@ -39,9 +40,32 @@
     .wrapper {
         grid-column: 2 / -1;
         grid-row: 2 / 3;
+        h4 {
+            color: $tertiary;
+        }
         img {
             width: 100%;
             object-fit: cover;
+        }
+        a {
+            font-family: $bodyFont, sans-serif;
+            font-size: 2rem;       
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+            line-height: 3.2rem;
+            color: $secondary;
+        }
+        ul li {
+            display: flex;
+            &::before {
+                content: "•";
+                color: $primary;
+                padding: 0 2%;
+            }
+            a {
+                color: $quaternary;
+                font-weight: normal;
+            }
         }
     }
 }
@@ -53,6 +77,8 @@
     h4 {
         grid-column: 2 / -1;
         padding: 5% 0;
+        font-weight: bold;
+        color: $quaternary;
     }
     .commentImg1 {
         grid-area: 2 / 2 / 3 / 3;
@@ -60,6 +86,7 @@
         img {
             width: 100%;
             object-fit: cover;
+            padding-top: 10%;
         }
     }
     .comment1 {
@@ -71,6 +98,7 @@
         img {
             width: 100%;
             object-fit: cover;
+            padding-top: 10%;
         }
     }
     .comment2 {
