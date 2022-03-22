@@ -1,4 +1,5 @@
 .homeHeader {
+    z-index: 1;
     grid-column: 1 / -1;
     background: url(../assets/home-image-1.jpg) center;
     background-size: cover;
@@ -20,31 +21,28 @@
             }
         }
     }
-    i {
-        display: none; // hide the hamburger/ dropdown menu in large screen mode
+    i, .slideMenu {
+        visibility: hidden; // hide the hamburger/ dropdown menu in large screen mode
     }
+
     .welcBanner {
-        margin-top: 5%;
-        display: flex;
-        position: relative;
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding-top: 5vw;
         .imgContainer {
-            margin-top: 5%;
-            width: 45%;
-            height: 45%;
-            min-width: 320px;
+            grid-column: 1 / 5;
+            height: 100%;
             max-width: 1000px;
             img {
                 width: 100%;
-                height: 60vh;
                 object-fit: cover;
             }
         }
         .welcMsg {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            padding-top: 10%;
-            padding-left: 35vw;
+            grid-column: 5 / -1;
+            padding-top: 100px;
+            margin-left: -125px;
         }
     }
 }
@@ -71,8 +69,8 @@
             }
         }
     }
-    i {
-        display: none; // hide the hamburger/ dropdown menu in large screen mode
+    i, .slideMenu {
+        visibility: hidden; // hide the hamburger/ dropdown menu in large screen mode
     }
 }
 
@@ -98,13 +96,7 @@
             }
         }
     }
-    i {
-        display: none; // hide the hamburger/ dropdown menu in large screen mode
+    i, .slideMenu {
+        visibility: hidden; // hide the hamburger/ dropdown menu in large screen mode
     }
 }
-
-
-
-
-
-
