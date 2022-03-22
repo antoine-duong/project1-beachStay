@@ -282,6 +282,7 @@ input[type=submit] {
   grid-template-columns: repeat(12, 1fr);
   position: relative;
   max-width: 2560px;
+  min-width: 320px;
   margin: 0 auto;
   grid-template-rows: 30vh 10vh 20vh;
 }
@@ -352,19 +353,25 @@ h5 {
   color: #0C5F4C;
 }
 
+section h5 {
+  color: #063974;
+  font-size: 2rem;
+}
+
 p {
   letter-spacing: 0.2rem;
   line-height: 3.2rem;
 }
 
-nav a {
+nav li a {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 2rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: #FFF;
 }
-nav a:hover, nav a:focus {
+nav li a:hover, nav li a:focus {
   color: #50E3C2;
   outline: none;
 }
@@ -460,11 +467,44 @@ button:hover, button:focus {
   border: 2px solid #063974;
 }
 
-section h5 {
-  color: #063974;
-  font-size: 2rem;
+a, a::after {
+  font-size: 3.2rem;
+  color: #2C2C2C;
 }
 
+nav ul li:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.container .socialLinks li:hover {
+  -webkit-animation: bouncy 0.75s infinite;
+          animation: bouncy 0.75s infinite;
+}
+
+@-webkit-keyframes bouncy {
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes bouncy {
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
 .homeHeader {
   grid-column: 1/-1;
   background: url(../assets/home-image-1.jpg) center;
@@ -499,9 +539,6 @@ section h5 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-.homeHeader .navBar nav ul li a {
-  letter-spacing: 1px;
 }
 .homeHeader i {
   display: none;
@@ -574,9 +611,6 @@ section h5 {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.blogHeader .navBar nav ul li a {
-  letter-spacing: 1px;
-}
 .blogHeader i {
   display: none;
 }
@@ -615,9 +649,6 @@ section h5 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-.contactHeader .navBar nav ul li a {
-  letter-spacing: 1px;
 }
 .contactHeader i {
   display: none;
@@ -1001,11 +1032,18 @@ section h5 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.asideContact .container .socialLinks a i {
-  padding-right: 10%;
-  font-size: 3.2rem;
-  color: #2C2C2C;
-  cursor: pointer;
+.asideContact .container .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.asideContact .container .socialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .asideContact .container h5 {
   color: #2C2C2C;
@@ -1017,4 +1055,142 @@ footer {
   background-color: #2C2C2C;
   color: #FFF;
   text-align: center;
+}
+
+@media (max-width: 1080px) {
+  h2 {
+    font-size: 8.25vw;
+    letter-spacing: 0.75vw;
+  }
+
+  h5 {
+    font-size: 3vw;
+  }
+
+  .siteLogo {
+    font-size: 3.15vw;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 1.85vw;
+  }
+
+  ::-moz-placeholder {
+    font-size: 1.85vw;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 1.85vw;
+  }
+
+  ::-ms-input-placeholder {
+    font-size: 1.85vw;
+  }
+
+  ::placeholder {
+    font-size: 1.85vw;
+  }
+
+  form input[type=submit] {
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+
+  a, a::after {
+    font-size: 3.5vw;
+  }
+
+  ul li {
+    font-size: 2vw;
+  }
+
+  .siteGridContact {
+    grid-template-rows: 20vw 5vw 40vw;
+    background-color: #FAFFFE;
+  }
+
+  .getInTouch {
+    grid-area: 2/1/3/-1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+
+  .contactForm {
+    grid-area: 3/2/5/12;
+    height: 65vw;
+    padding: 0 5%;
+  }
+  .contactForm form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    row-gap: 2vw;
+  }
+  .contactForm form input[type=text] {
+    grid-area: 1/1/2/-1;
+    height: 8.5vw;
+    width: 56.5vw;
+  }
+  .contactForm form input[type=email] {
+    grid-area: 2/1/3/-1;
+    height: 8.5vw;
+    width: 56.5vw;
+  }
+  .contactForm form textarea {
+    grid-area: 3/1/4/-1;
+    width: 56.5vw;
+  }
+  .contactForm form input[type=submit] {
+    grid-area: 4/1/5/-1;
+    height: 8.5vw;
+  }
+
+  .asideContact {
+    grid-area: 4/1/5/-1;
+    padding: 10vw 0;
+  }
+  .asideContact .container {
+    grid-column: 1/-1;
+  }
+  .asideContact .container ul {
+    width: 65vw;
+  }
+}
+@media (max-width: 480px) {
+  h5 {
+    font-size: 12px;
+  }
+
+  .siteLogo {
+    font-size: 12px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 9px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 9px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 9px;
+  }
+
+  ::-ms-input-placeholder {
+    font-size: 9px;
+  }
+
+  ::placeholder {
+    font-size: 9px;
+  }
+
+  a, a::after {
+    font-size: 15px;
+  }
+
+  ul li {
+    font-size: 9px;
+  }
 }

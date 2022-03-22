@@ -1,0 +1,22 @@
+nav ul li {
+    &:hover {
+        transition: 0.5s ease-in-out;
+        transform: translateY(-5px);
+    }
+}
+
+.container .socialLinks li {
+    &:hover {
+        animation: bouncy .75s infinite;
+    }
+}
+
+@keyframes bouncy {
+    0%,50%,100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    
+}

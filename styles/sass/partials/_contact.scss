@@ -62,13 +62,10 @@
         display: flex;
         flex-direction: column;
         .socialLinks {
-            a {
-                i {
-                    padding-right: 10%;
-                    font-size: 3.2rem;
-                    color: $quaternary;
-                    cursor: pointer;
-                }
+            display: flex;
+            justify-content: space-between;
+            ul {
+                display: flex;
             }
         }
         h5 {

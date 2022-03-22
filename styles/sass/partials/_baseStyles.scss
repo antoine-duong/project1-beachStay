@@ -43,6 +43,7 @@ input[type="submit"] {
     grid-template-columns: repeat(12, 1fr);
     position: relative;
     max-width: 2560px;
+    min-width: 320px;
     margin: 0 auto;
     grid-template-rows: 30vh 10vh 20vh;
 }
