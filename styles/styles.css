@@ -358,9 +358,19 @@ section h5 {
   font-size: 2rem;
 }
 
+article h5 {
+  color: #0C5F4C;
+  font-size: 3.2rem;
+}
+
 p {
   letter-spacing: 0.2rem;
   line-height: 3.2rem;
+}
+p.date {
+  color: #063974;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 nav li a {
@@ -825,6 +835,7 @@ nav ul li:hover {
      object-fit: cover;
   -webkit-box-shadow: 20px 20px 0px #50E3C2;
           box-shadow: 20px 20px 0px #50E3C2;
+  z-index: 1;
 }
 .post article {
   border-right: 5px solid #50E3C2;
@@ -1058,12 +1069,24 @@ footer {
 }
 
 @media (max-width: 1080px) {
+  body {
+    font-size: 2vw;
+  }
+
   h2 {
     font-size: 8.25vw;
     letter-spacing: 0.75vw;
   }
 
+  h4 {
+    font-size: 3vw;
+  }
+
   h5 {
+    font-size: 3vw;
+  }
+
+  article h5 {
     font-size: 3vw;
   }
 
@@ -1102,6 +1125,84 @@ footer {
 
   ul li {
     font-size: 2vw;
+  }
+
+  p {
+    line-height: 3vw;
+  }
+
+  .siteGridBlog {
+    grid-template-rows: 20vw 5vw 40vw;
+    height: auto;
+  }
+
+  .post {
+    grid-area: 3/1/5/12;
+  }
+  .post article {
+    background-color: #FAFFFE;
+  }
+
+  .comments {
+    grid-area: 5/1/6/12;
+    background-color: #FAFFFE;
+  }
+  .comments h4 {
+    padding: 1vw 0;
+  }
+  .comments div h5 {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  .commentForm {
+    grid-area: 6/1/7/12;
+  }
+  .commentForm form {
+    grid-template-columns: 50% 50%;
+    padding: 0 10%;
+  }
+  .commentForm form input[type=text] {
+    grid-area: 1/1/2/2;
+  }
+  .commentForm form input[type=email] {
+    grid-area: 1/2/2/3;
+  }
+  .commentForm form textarea {
+    grid-area: 2/1/4/3;
+  }
+  .commentForm form input[type=submit] {
+    grid-area: 4/1/5/3;
+  }
+
+  .asideInfo {
+    grid-area: 7/1/8/12;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #FAFFFE;
+  }
+  .asideInfo .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .asideInfo .wrapper img {
+    width: 50vw;
   }
 
   .siteGridContact {

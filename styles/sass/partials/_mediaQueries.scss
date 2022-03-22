@@ -1,10 +1,19 @@
 @media (max-width: 1080px) {
 // Typography
+    body {
+        font-size: 2vw;
+    }
     h2 {
         font-size: 8.25vw;
         letter-spacing: 0.75vw;
     }
+    h4 {
+        font-size: 3vw;
+    }
     h5 {
+        font-size: 3vw;
+    }
+    article h5 {
         font-size: 3vw;
     }
     .siteLogo {
@@ -23,11 +32,69 @@
     ul li {
         font-size: 2vw;
     }
+    p {
+        line-height: 3vw;
+    }
 
 
 // Home/ index.html grid
 
 // Blog grid
+    .siteGridBlog {
+        grid-template-rows: 20vw 5vw 40vw;
+        height: auto;
+    }
+    .post {
+        grid-area: 3 / 1 / 5 / 12;
+        article {
+            background-color: $bgrdcolour1;
+        }
+    }
+    .comments {
+        grid-area: 5 / 1 / 6 / 12;
+        background-color: $bgrdcolour1;
+        h4 {
+            padding: 1vw 0;
+        }
+        div h5 {
+            font-size: 2vw;
+            line-height: 2.5vw;
+        }
+        }
+    .commentForm {
+        grid-area: 6 / 1 / 7 / 12;
+        form {
+            grid-template-columns: 50% 50%;
+            padding: 0 10%;
+            input[type="text"]{
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            input[type="email"]{
+                grid-area: 1 / 2 / 2 / 3;
+            }
+            textarea {
+                grid-area: 2 / 1 / 4 / 3;
+            }
+            input[type="submit"] {
+                grid-area: 4 / 1 / 5 / 3;
+            }
+        }
+    }
+    .asideInfo {
+        grid-area: 7 / 1 / 8 / 12;
+        display: flex;
+        flex-direction: column;
+        background-color: $bgrdcolour1;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50vw;
+            }
+        }
+    }
 
 // Contact grid
     .siteGridContact {
@@ -79,14 +146,15 @@
     }
 }
 
+
 @media (max-width: 800px) {
-    // Typography
+// Typography
 
 }
 
 @media (max-width: 480px) {
 
-    // Typography
+// Typography
     h5 {
         font-size: 12px;
     }

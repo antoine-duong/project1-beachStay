@@ -66,9 +66,19 @@ section h5 {
     font-size: 2rem;
 }
 
+article h5 {
+    color: $secondary;
+    font-size: 3.2rem;
+}
+
 p {
     letter-spacing: 0.2rem;
     line-height: 3.2rem;
+    &.date {
+        color: $tertiary;
+        font-style: italic;
+        letter-spacing: 1px;
+    }
 }
 
 nav {

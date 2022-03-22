@@ -16,6 +16,7 @@
             width: calc(100% - 20px);
             object-fit: cover;
             box-shadow: 20px 20px 0px $primary;
+            z-index: 1;
         }
     }
     article {
