@@ -25,25 +25,30 @@
         visibility: hidden; // hide the hamburger/ dropdown menu in large screen mode
     }
 
-    .welcBanner {
-        grid-column: 1 / -1;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        padding-top: 5vw;
-        .imgContainer {
-            grid-column: 1 / 5;
-            height: 100%;
-            max-width: 1000px;
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
+}
+
+.welcBanner {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: $bgrdcolour1;
+    // padding-top: 5vw;
+    z-index: 100;
+    .imgContainer {
+        grid-column: 1 / 5;
+        height: 100%;
+        max-width: 1000px;
+        img {
+            width: 100%;
+            object-fit: cover;
         }
-        .welcMsg {
-            grid-column: 5 / -1;
-            padding-top: 100px;
-            margin-left: -125px;
-        }
+        margin: -80% 0;
+
+    }
+    .welcMsg {
+        grid-column: 5 / -1;
+        // padding-top: 100px;
+        margin: -20% 0 0 -10%;
     }
 }
 

@@ -6,34 +6,20 @@
             position: absolute;
             top: 20px;
             right: 50px;
-            font-size: 5rem;
-            color: $solidWhite;
+            font-size: 7.5vw;
+            color: rgba(255, 255, 255, 0.5);
             cursor: pointer;
         }
     }
-    .slideMenu {
-        position: absolute;
-        width: 100px;
-        height: 300px;
-        background-color: $secondary;
-        top: -300px;
-        ul li {
-            list-style: none;
-            color: $solidWhite;
-            font-family: $bodyFont, sans-serif;
+    .navBar nav {
+        height: 200px;
+        ul {
+            flex-direction: column;
+            height: 100%;
         }
     }
-    .slideMenu.active {
-        top: 0px;
-    }
 
-    .navBar nav {
-        visibility: hidden;
-    }
-
-
-
-// Typography
+// Typography - this is added to better suit standard sized screen due to the site was originally developed on ultrawide screen
     body {
         font-size: 2vw;
     }
@@ -96,11 +82,12 @@
             grid-area: 1 / 1 / 2 / -1;
             align-items: center;
             background: url(../assets/header-box.jpg) center;
-            width: 70vw;
-            height: 50vw;
-            box-shadow: 20px 20px 0 $primary;
-            padding-bottom: 30vw;
-            margin: 0;
+            width: 50vw;
+            height: 40vw;
+            box-shadow: 10px 10px 0 $primary;
+            margin: -40% 0;
+            padding: 10vw 0 0 10vw;
+            min-width: 300px;
         }
     }
     .intro {
@@ -274,7 +261,7 @@
 
 @media (max-width: 480px) {
 
-// Typography
+// Typography set min font size to improve readability
     h5 {
         font-size: 12px;
     }
