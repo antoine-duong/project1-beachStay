@@ -20,3 +20,9 @@ nav ul li {
     }
     
 }
+
+@keyframes blinking {
+    50% {
+        opacity: 0;
+    }
+}

@@ -516,25 +516,15 @@ nav ul li:hover {
             transform: translateY(-20px);
   }
 }
-@-webkit-keyframes blinking {
-  50% {
-    opacity: 0;
-  }
-}
-@keyframes blinking {
-  50% {
-    opacity: 0;
-  }
-}
 header {
+  z-index: 1;
   grid-column: 1/-1;
-  height: 75vw;
+  height: 75vh;
 }
 
 .homeHeader {
   background: url(../assets/home-image-1.jpg) center;
   background-size: cover;
-  height: 75vh;
 }
 
 .blogHeader {
@@ -562,8 +552,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   max-width: 40%;
+  min-width: 300px;
 }
-.navBar nav .mainNav {
+.navBar nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -841,10 +832,10 @@ header {
 }
 
 .comments {
-  z-index: 1;
   grid-area: 5/1/6/9;
   display: grid;
   grid-template-columns: 15% 15% 70%;
+  background-color: #FAFFFE;
 }
 .comments h4 {
   grid-column: 2/-1;
@@ -881,7 +872,6 @@ header {
 }
 
 .commentForm {
-  z-index: 1;
   grid-area: 6/1/7/9;
 }
 .commentForm form {
@@ -1021,54 +1011,38 @@ footer {
 
 @media (max-width: 1080px) {
   .navBar nav {
-    z-index: 1000;
+    z-index: 9999;
     position: relative;
-    width: 30vw;
+    width: 25vw;
     height: 200px;
+    background-color: rgba(201, 249, 241, 0.5);
+    border-radius: 10px;
   }
-  .navBar nav .mainNav {
+  .navBar nav ul {
+    z-index: 9999;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: rgba(201, 249, 241, 0.5);
-    border-radius: 10px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     padding-left: 3vw;
-    -webkit-transform: translate(200%);
-            transform: translate(200%);
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: -webkit-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  }
-  .navBar nav .mainNav li a {
-    text-shadow: 1px 1px #2C2C2C;
   }
   .navBar nav .mobileMenuToggle {
-    z-index: 9999;
     display: block;
     position: absolute;
-    top: 8px;
-    right: 20px;
-    font-size: 20px;
+    top: 2rem;
+    right: 2rem;
+    height: 5rem;
+    width: 5rem;
   }
   .navBar nav .mobileMenuToggle i {
     display: block;
     color: #50E3C2;
     cursor: pointer;
-  }
-  .navBar nav .mobileMenuToggle:hover, .navBar nav .mobileMenuToggle:focus {
-    -webkit-animation: blinking 1s linear infinite;
-            animation: blinking 1s linear infinite;
-  }
-  .navBar nav .mainNav[elementVisible=true] {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
   }
 
   body {
@@ -1409,19 +1383,6 @@ footer {
     font-size: 9px;
   }
 
-  .navBar {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .navBar nav .mainNav {
-    background-color: rgba(201, 249, 241, 0.75);
-    border-radius: 10px;
-  }
-  .navBar nav .mobileMenuToggle {
-    font-size: 20px;
-    top: 5px;
-    right: 7px;
-  }
   .navBar nav li a {
     font-size: 14px;
   }

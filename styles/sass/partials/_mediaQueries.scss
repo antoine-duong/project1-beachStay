@@ -1,25 +1,48 @@
 @media (max-width: 1080px) {
-// Slide out menu
-    i {
-        &.menuIcon {
-            visibility: visible;
-            position: absolute;
-            top: 20px;
-            right: 50px;
-            font-size: 7.5vw;
-            color: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-        }
-    }
+// Mobile navigational menu
     .navBar nav {
+        z-index: 1000;
+        position: relative;
+        width: 30vw;
         height: 200px;
-        ul {
+        .mainNav {
             flex-direction: column;
+            width: 100%;
             height: 100%;
+            background-color: rgba(201, 249, 241, 0.5);
+            border-radius: 10px;    
+            align-items: flex-start;
+            padding-left: 3vw;
+            transform: translate(200%);
+            transition: transform 0.3s ease-out;
+            li a {
+                text-shadow: 1px 1px $quaternary;
+                }
+            }
+        .mobileMenuToggle {
+            z-index: 9999;
+            display: block;
+            position: absolute;
+            top: 8px;
+            right: 20px;
+            font-size: 20px;
+            i {
+                display: block;
+                color: $primary;
+                cursor: pointer;
+                }
+            &:hover,
+            &:focus {
+                animation: blinking 1s linear infinite;
+            }
+            }
+            
+        .mainNav[elementVisible="true"] {
+            transform: translate(0%);
         }
-    }
+    } 
 
-// Typography - this is added to better suit standard sized screen due to the site was originally developed on ultrawide screen
+// Typography - this is added to better suit standard sized screen due to the site was originally developed on ultrawide screen which kinda screwed up all the aspect ratio
     body {
         font-size: 2vw;
     }
@@ -276,5 +299,22 @@
     }
     ul li {
         font-size: 9px;
+    }
+    .navBar {
+        justify-content: space-around;
+        nav {
+            .mainNav{
+                background-color: rgba(201, 249, 241, 0.75);
+                border-radius: 10px;    
+            }
+            .mobileMenuToggle {
+                font-size: 20px;
+                top: 5px;
+                right: 7px;
+            }   
+            li a {
+                font-size: 14px;
+            }
+        } 
     }
 }

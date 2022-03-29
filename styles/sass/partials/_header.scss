@@ -1,107 +1,20 @@
-.homeHeader {
-    z-index: 1;
+header {
     grid-column: 1 / -1;
+    height: 75vw;
+}
+
+.homeHeader {
     background: url(../assets/home-image-1.jpg) center;
     background-size: cover;
     height: 75vh;
-    .navBar {
-        display: flex;
-        justify-content: space-between;
-        margin: 1.5% 10%;
-        position: relative;
-        nav {
-            display: flex;
-            max-width: 40%;
-            min-width: 300px;
-            ul {
-                display: flex;
-                width: 35vw;
-                justify-content: space-between;
-                align-items: flex-end;
-            }
-        }
-    }
-    i, .slideMenu {
-        visibility: hidden; // hide the hamburger/ dropdown menu in large screen mode
-    }
-
-}
-
-.welcBanner {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: $bgrdcolour1;
-    // padding-top: 5vw;
-    z-index: 100;
-    .imgContainer {
-        grid-column: 1 / 5;
-        height: 100%;
-        max-width: 1000px;
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
-        margin: -80% 0;
-
-    }
-    .welcMsg {
-        grid-column: 5 / -1;
-        // padding-top: 100px;
-        margin: -20% 0 0 -10%;
-    }
 }
 
 .blogHeader {
-    grid-column: 1 / -1;
     background: url(../assets/blog-image-1.jpg) center;
     background-size: cover;
-    height: 60vh;
-    .navBar {
-        display: flex;
-        justify-content: space-between;
-        margin: 1.5% 10%;
-        position: relative;
-        nav {
-            display: flex;
-            max-width: 40%;
-            min-width: 300px;
-            ul {
-                display: flex;
-                width: 35vw;
-                justify-content: space-between;
-                align-items: flex-end;
-            }
-        }
-    }
-    i, .slideMenu {
-        visibility: hidden; // hide the hamburger/ dropdown menu in large screen mode
-    }
 }
 
 .contactHeader {
-    grid-column: 1 / -1;
     background: url(../assets/contact-image-1.jpg) center;
     background-size: cover;
-    height: 60vh;
-    .navBar {
-        display: flex;
-        justify-content: space-between;
-        margin: 1.5% 10%;
-        position: relative;
-        nav {
-            display: flex;
-            max-width: 40%;
-            min-width: 300px;
-            ul {
-                display: flex;
-                width: 35vw;
-                justify-content: space-between;
-                align-items: flex-end;
-            }
-        }
-    }
-    i, .slideMenu {
-        visibility: hidden; // hide the hamburger/ dropdown menu in large screen mode
-    }
 }

@@ -1,3 +1,28 @@
+.welcBanner {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: $bgrdcolour1;
+    // padding-top: 5vw;
+    z-index: 100;
+    .imgContainer {
+        grid-column: 1 / 5;
+        height: 100%;
+        max-width: 1000px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        margin: -80% 0;
+
+    }
+    .welcMsg {
+        grid-column: 5 / -1;
+        // padding-top: 100px;
+        margin: -20% 0 0 -10%;
+    }
+}
+
 .intro {
     grid-column: 1 / -1;
     padding: 10%;
@@ -44,6 +69,9 @@
         display: grid;
         grid-template-columns: 1fr 6fr;
         .iconWrapper {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 1vw;
             i {
                 height: 5.8rem;
                 width: 5.8rem;

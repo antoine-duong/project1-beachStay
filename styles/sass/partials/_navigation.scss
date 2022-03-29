@@ -1,0 +1,19 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5% 10%;
+    position: relative;
+    nav {
+        display: flex;
+        max-width: 40%;
+        .mainNav {
+            display: flex;
+            width: 35vw;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .mobileMenuToggle {
+            display: none;
+        }
+    }
+}
